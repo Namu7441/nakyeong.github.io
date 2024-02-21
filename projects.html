@@ -34,6 +34,13 @@
                 border-radius: 20px;
                 margin: 30px auto;
             }
+            .video-container {
+                    text-align: center;
+            }
+            .video-container video {
+                    display: inline-block;
+                    margin: 0 auto;
+            }
             h1 {
                 text-align: center;
                 margin-bottom: 20px;
@@ -42,10 +49,12 @@
                 font-size: 30px;
                 text-align: center;
             }
-            h3 {
-                font-size: 20px;
-                text-align: center;
-            }
+            #backButton {
+                position: fixed;
+                top: 20px; 
+                left: 20px; 
+                z-index: 999; 
+}
             .section-title {
                 font-size: 35px;
                 margin-top: 40px;
@@ -87,19 +96,23 @@
     <header>
         <h1>Work Style</h1>
     </header>
-    <div class="container">
+<div class="container">
     <h2> 대쉬보드 </h2>
+            <div class="video-container">
     <video controls="video1" width="640" height="360" muted="" loop="" autoplays="">
         <source src="https://github.com/Namu7441/nakyeong.github.io/raw/main/dashboard.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    </div>
+            </div>
+</div>
     <div class="section">
     <h2> 문의 예시 </h2>
+            <div class="video-container">
     <video controls="video2" width="640" height="360" muted="" loop="" autoplays="">
         <source src="https://github.com/Namu7441/nakyeong.github.io/raw/main/simulation.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+            </div>
     </div>
         <button id="backButton" onclick="goBack()"> ⬅️ 돌아가기 </button>
 </body>
